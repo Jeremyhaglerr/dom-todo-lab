@@ -23,3 +23,12 @@ listElement.addEventListener('click', handleClick)
 function handleClick(evt) {
   evt.target.remove()
 }
+
+resetElement.addEventListener('click', removeAllChildNodes)
+
+function removeAllChildNodes() {
+  const itemsElements = document.querySelectorAll(".items")
+  console.log(itemsElements);
+itemsElements.forEach(item=>item.remove())
+ 
+}
