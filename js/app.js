@@ -14,7 +14,6 @@ buttonElement.addEventListener('click', function(evt) {
    document.querySelector('ul').appendChild(newLi)
    newLi.className = "items"
    inp.value = ''
-   console.log(newLi);
  }
 })
 
@@ -28,7 +27,5 @@ resetElement.addEventListener('click', removeAllChildNodes)
 
 function removeAllChildNodes() {
   const itemsElements = document.querySelectorAll(".items")
-  console.log(itemsElements);
 itemsElements.forEach(item=>item.remove())
- 
 }
