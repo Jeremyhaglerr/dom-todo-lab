@@ -17,3 +17,9 @@ buttonElement.addEventListener('click', function(evt) {
    console.log(newLi);
  }
 })
+
+listElement.addEventListener('click', handleClick)
+
+function handleClick(evt) {
+  evt.target.remove()
+}
